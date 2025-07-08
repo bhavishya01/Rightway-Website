@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rightway Textile Mills - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    
+
+    /* HERO IMAGE SECTION */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('image1.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .hero-btn {
+      display: inline-block;
+      background-color: #6d4c41;
+      color: white;
+      padding: 12px 24px;
+      margin-top: 20px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    .hero-btn:hover {
+      background-color: #4e342e;
+    }
+
+    /* STORY SECTION */
+    .story-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .story-section h2 {
+      font-size: 36px;
+      color: #6d4c41;
+      margin-bottom: 20px;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .story-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    /* EMAIL SECTION */
+    .email-section {
+      background: #fff;
+      max-width: 600px;
+      margin: 60px auto;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .email-section h2 {
+      color: #6d4c41;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .email-section input,
+    .email-section textarea {
+      width: 100%;
+      padding: 14px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .email-section textarea {
+      resize: vertical;
+      height: 120px;
+    }
+
+    .email-section button {
+      background-color: #6d4c41;
+      color: white;
+      font-weight: bold;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .email-section button:hover {
+      background-color: #4e342e;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      align-items: center;
+      background: #25D366;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+
+    .whatsapp img {
+      margin-right: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #f4f4f4;
+      color: #555;
+      margin-top: 40px;
+    }
+
+  
+    
+  </style>
+</head>
+<body>
+ <!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <img src="rightway.jpeg" alt="Rightway Logo" class="logo" />
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- ✅ moved outside nav-container -->
+  <ul class="nav-links" id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="products.html">Products ▾</a>
+      <ul class="dropdown-menu">
+        <a href="products.html#recycled-wool">Recycled Wool Fabrics</a>
+        <a href="products.html#diamond-twill">Diamond & Twill Weave Fabrics</a>
+        <a href="products.html#blazers">Woolen Blazers</a>
+        <a href="products.html#headgear">Woolen Headgear</a>
+        <a href="products.html#socks">Woolen Socks</a>
+        <a href="products.html#spread-blankets">Woolen Spread/throw Blankets</a>
+        <a href="products.html#recycled-blankets">Recycled Wool Blankets</a>
+        <a href="products.html#angola">Shirting Angola Fabrics</a>
+        <a href="products.html#mosquito-net">Mosquito Net</a>
+        <a href="products.html#hospital-blankets">Hospital Blankets</a>
+      </ul>
+    </li>
+    <li><a href="Sustainability.html">Sustainability</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Crafting Excellence in Wool</h1>
+    <p>Recycled Wool Fabrics, Blazers, Headgear, Socks & More</p>
+    <a href="products.html" class="hero-btn">Explore Products</a>
+  </section>
+
+  <!-- STORY SECTION -->
+  <section class="story-section">
+    <h2>Our Journey</h2>
+    <p>
+     <strong>Rightway Textile Mills</strong> in Amritsar, with decades of experience in the textile industry, is a reputed manufacturer, supplier, and exporter of premium woolen products. Our comprehensive range includes blazer and twill fabrics, woolen blankets (including those for CAPFs), stoles, socks, caps, scarves, mufflers, mosquito nets, recycled wool blankets, shirting Angola fabrics, and sleeping bags. With a strong focus on quality, craftsmanship, and sustainability, we proudly serve both domestic and international markets.
+    </p>
+  </section>
+
+  <!-- EMAIL CONTACT (ELEGANT VERSION) -->
+<section class="email-section">
+  <h2>Let’s Connect</h2>
+  <p>Have a question, inquiry, or business opportunity? <br>We’re just one email away.</p>
+  <a href="mailto:rightwaytextilemills@gmail.com" class="email-button">Email Us</a>
+</section>
+
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/919855230044" class="whatsapp" target="_blank">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+    <span>Whatsapp Us</span>
+  </a>
+
+  <script>
+  function toggleMenu() {
+    const menu = document.getElementById('navMenu');
+    menu.classList.toggle('show');
+  }
+</script>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 Rightway Textile Mills | All rights reserved
+  </footer>
+</body>
+</html>

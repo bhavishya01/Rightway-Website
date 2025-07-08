@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rightway Textile Mills - Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    
+
+    
+
+    .section {
+      max-width: 1200px;
+      margin: 80px auto 60px;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 34px;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #6d4c41;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product-card p {
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+      padding: 20px;
+      margin: 0;
+      text-align: center;
+    }
+
+   
+    .footer {
+      text-align: center;
+      padding: 24px;
+      background: #f4f4f4;
+      font-size: 14px;
+      color: #777;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+ <!-- NAVBAR -->
+<header class="navbar">
+  <div class="nav-container">
+    <img src="rightway.jpeg" alt="Rightway Logo" class="logo" />
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- ✅ moved outside nav-container -->
+  <ul class="nav-links" id="navMenu">
+    <li><a href="index.html">Home</a></li>
+    <li class="dropdown">
+      <a href="products.html">Products ▾</a>
+      <ul class="dropdown-menu">
+        <a href="products.html#recycled-wool">Recycled Wool Fabrics</a>
+        <a href="products.html#diamond-twill">Diamond & Twill Weave Fabrics</a>
+        <a href="products.html#blazers">Woolen Blazers</a>
+        <a href="products.html#headgear">Woolen Headgear</a>
+        <a href="products.html#socks">Woolen Socks</a>
+        <a href="products.html#spread-blankets">Woolen Spread/throw Blankets</a>
+        <a href="products.html#recycled-blankets">Recycled Wool Blankets</a>
+        <a href="products.html#angola">Shirting Angola Fabrics</a>
+        <a href="products.html#mosquito-net">Mosquito Net</a>
+        <a href="products.html#hospital-blankets">Hospital Blankets</a>
+      </ul>
+    </li>
+    <li><a href="Sustainability.html">Sustainability</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</header>
+
+
+
+
+<!-- PRODUCTS SECTION -->
+<section class="section">
+  <h2>Our Premium Product Range</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="recycledfabrics.jpg" alt="Recycled Wool Fabrics">
+      <p>Recycled Wool Fabrics</p>
+    </div>
+    <div class="product-card">
+      <img src="diamond weave.jpg" alt="Diamond & Twill Weave Fabrics">
+      <p>Diamond & Twill Weave Fabrics</p>
+    </div>
+    <div class="product-card">
+      <img src="balzeres.jpg" alt="Woolen Blazers">
+      <p>Woolen Blazers</p>
+    </div>
+    <div class="product-card">
+      <img src="images/headgear.jpg" alt="Woolen Headgear">
+      <p>Woolen Headgear</p>
+    </div>
+    <div class="product-card">
+      <img src="woolen socks.jpg" alt="Woolen Socks">
+      <p>Woolen Socks</p>
+    </div>
+    <div class="product-card">
+      <img src="spread blankets.jpg" alt="Spread Blankets">
+      <p>Woolen Spread/throw Blankets</p>
+    </div>
+    <div class="product-card">
+      <img src="recycled wool blankets.jpg" alt="Recycled Wool Blankets">
+      <p>Recycled Wool Blankets</p>
+    </div>
+    <div class="product-card">
+      <img src="images/angola.jpg" alt="Shirting Angola Fabrics">
+      <p>Shirting Angola Fabrics</p>
+    </div>
+    <div class="product-card">
+      <img src="images/mosquito-net.jpg" alt="Mosquito Net">
+      <p>Mosquito Net</p>
+    </div>
+     <div class="product-card">
+      <img src="hospitals.png" alt="Hospital Blankets">
+      <p>Hospital Blankets</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP BUTTON -->
+<a href="https://wa.me/919855230044" class="whatsapp" target="_blank">
+  <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
+  <span>Whatsapp Us</span>
+</a>
+
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('navMenu');
+    menu.classList.toggle('show');
+  }
+</script>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  © 2025 Rightway Textile Mills | All rights reserved
+</footer>
+
+</body>
+</html>images

@@ -1,0 +1,296 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfbf8;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: opacity 0.2s ease-in-out;
+}
+body.fade-out {
+  opacity: 0;
+}
+
+
+.navbar {
+  background: #fff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  height: 110px;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 800;
+  font-size: 20px;         /* Bigger font */
+  padding: 14px 22px;      /* More clickable area */
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+
+.nav-links a:hover {
+  background-color: #f5f5f5;
+  color: #b71c1c;
+}
+
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(to bottom right, #d7ccc8, #a1887f);
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: #6d4c41;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #4e342e;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #6d4c41;
+  margin-bottom: 20px;
+}
+
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp:hover {
+  transform: scale(1.05);
+}
+
+.whatsapp img {
+  height: 24px;
+  margin-right: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #efebe9;
+  color: #555;
+  font-size: 14px;
+}
+
+.email-section {
+  background: linear-gradient(135deg, #faf7f5, #f0ebe7);
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  font-family: 'Playfair Display', serif;
+}
+
+.email-section h2 {
+  font-size: 36px;
+  color: #6d4c41;
+  margin-bottom: 15px;
+}
+
+.email-section p {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.email-button {
+  background-color: #6d4c41;
+  color: #fff;
+  padding: 14px 36px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.email-button:hover {
+  background-color: #4e342e;
+}
+
+/* Dropdown Styling for Navbar */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  top: 100%;
+  left: 0;
+  min-width: 260px;
+  border-radius: 8px;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  width: 100%;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+  color: #b71c1c;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .logo {
+    height: 90px;
+    position: static;
+    transform: none;
+ 
+    
+  }
+
+  .hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    background: #f9f9f9;
+    padding-left: 20px;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: flex;
+  }
+}
